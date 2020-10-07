@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".InvoiceActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardElevation="20dp"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:src="@drawable/gas_station_seven_eleven"
+                android:layout_height="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Sept 22 2020\nMelbourne\nPump-112"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Scott Morrison"
+                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Cart:"
+                android:layout_marginTop="50dp"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Petrol Premium\n1 lt @ 1.01"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="$50"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".WalletActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Your Current Balance"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_wallet"
+        android:text="$"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_height="wrap_content"/>
+
+
+
+        <EditText
+            android:layout_width="120dp"
+            android:inputType="numberDecimal"
+            android:hint="Add Money"
+            android:id="@+id/ed_money"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="150dp"
+            android:id="@+id/btn_add"
+            android:textColor="#fff"
+            android:text="Add"
+            android:layout_marginTop="53dp"
+            android:background="#000"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/codeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Setup PIN for quick login "
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Enter 4 Digit PIN : "
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.poovam.pinedittextfield.CirclePinField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:fieldBgColor="#ddd"
+        android:layout_below="@+id/tv"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        app:noOfFields="4"
+        android:textSelectHandle="@drawable/text_handle"
+        app:circleRadius="15dp"
+        app:fillerRadius="10dp"
+        android:id="@+id/circleField"
+        android:layout_marginTop="55dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/circleField"
+        android:id="@+id/btn_next"
+        android:textColor="#fff"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

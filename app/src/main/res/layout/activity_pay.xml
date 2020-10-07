@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".PayActivity">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:src="@drawable/bill"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:id="@+id/tv_gas_station"
+        android:text="Gas Station name : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:id="@+id/tv_pump"
+        android:text="Pump # : "
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/radiogroup"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/cb_e10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Unleaded e10 - 1 Litre - 108.99 cents" />
+
+    <RadioButton
+        android:id="@+id/cb_91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Unleaded 91 - 1 Litre - 112.99 cents" />
+    <RadioButton
+        android:id="@+id/cb_diesel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Diesel - 1 Litre - 105.99 cents" />
+    <RadioButton
+        android:id="@+id/cb_gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:checked="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Gas - 1 Litre - 67.88 cents" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:text="Enter litre below : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:id="@+id/ed_lt_amount"
+        android:hint="lt"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_amount"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btn_pay"
+        android:text="Pay"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

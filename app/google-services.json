@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "104833697047",
+    "firebase_url": "https://cashlessfuel.firebaseio.com",
+    "project_id": "cashlessfuel",
+    "storage_bucket": "cashlessfuel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104833697047:android:987d1701e9946dbd01a352",
+        "android_client_info": {
+          "package_name": "com.example.cashlessfuel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104833697047-8jjql1f0mh5g4au6rgct2dmvjn1k5j3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cashlessfuel",
+            "certificate_hash": "94429bcc0b18d99ffd364747e60a84609363cd4d"
+          }
+        },
+        {
+          "client_id": "104833697047-699pugv2jlskp9psi733gbu10v5j746b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6wT2SndN5LOt5HYydTvuFb28Zhk1MB0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104833697047-699pugv2jlskp9psi733gbu10v5j746b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
